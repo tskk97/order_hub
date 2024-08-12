@@ -1,0 +1,16 @@
+*~
+*.pyc
+*.sqlite3
+*.[oa]
+*.pid
+*.rdb
+venv/*
+media/*
+.project
+.pydevproject
+.cache
+.env
+.pytest_cache/
+__pycache__/
+.vscode/
+env/*
