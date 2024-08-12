@@ -38,12 +38,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'graphene_django',
+    'django_rq',
 
     # apps
     'graphql_server',
     'base',
     'catalogue',
-    'orders'
+    'orders',
 ]
 
 MIDDLEWARE = [
@@ -95,6 +96,16 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '3306',
     }
+}
+
+
+RQ_QUEUES = {
+    "default": {
+        "HOST": 'localhost',
+        "PORT": 6379,
+        "DB": 0,
+        "DEFAULT_TIMEOUT": 360,
+    },
 }
 
 
